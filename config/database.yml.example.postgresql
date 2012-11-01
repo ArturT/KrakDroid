@@ -1,0 +1,22 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: krakdroid_development
+  pool: 5
+  min_messages: WARNING
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: krakdroid_test
+  pool: 5
+  min_messages: WARNING
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: krakdroid_production
+  pool: 5
+  username: root
+  password:
+  min_messages: WARNING
