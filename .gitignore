@@ -13,3 +13,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore examples files
+/config/database.yml
+
+# Ignore IntelliJ or RubyMine
+.idea
