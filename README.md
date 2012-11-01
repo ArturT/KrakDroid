@@ -12,6 +12,7 @@ Conference Website
 
 # Production env
 
+[krakdroid.herokuapp.com](http://krakdroid.herokuapp.com)
+
 	db: postgresql
-	[krakdroid.herokuapp.com](http://krakdroid.herokuapp.com)
 	git@heroku.com:krakdroid.git
