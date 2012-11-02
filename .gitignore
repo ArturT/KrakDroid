@@ -19,3 +19,6 @@
 
 # Ignore IntelliJ or RubyMine
 .idea
+
+# Ignore MacOS files
+.DS_Store
