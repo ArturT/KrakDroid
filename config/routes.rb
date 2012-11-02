@@ -1,5 +1,10 @@
 KrakDroid::Application.routes.draw do
+  match '/:locale' => 'pages#index'
   root to: 'pages#index'
+
+  scope "/:locale" do
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
