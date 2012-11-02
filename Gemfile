@@ -40,6 +40,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery_datepicker'
 
+gem 'activeadmin'
 gem 'globalize3'
 gem "paperclip", "~> 3.0"
 

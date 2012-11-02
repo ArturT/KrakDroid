@@ -1,4 +1,8 @@
 KrakDroid::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   match '/:locale' => 'pages#index'
   root to: 'pages#index'
 
