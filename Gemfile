@@ -24,6 +24,7 @@ end
 
 group :development, :test do
   gem 'awesome_print'
+  gem 'quiet_assets'
 end
 
 # Use unicorn as the app server on heroku
