@@ -10,6 +10,16 @@ Conference Website
 	/config/database.yml.example.postgresql
 
 
+## Paperclip gem requires
+
+	# MacOS
+	brew install imagemagick
+	brew install gs
+	
+	# Ubuntu
+	sudo apt-get install imagemagick
+
+
 # Production env
 
 [krakdroid.herokuapp.com](http://krakdroid.herokuapp.com)
