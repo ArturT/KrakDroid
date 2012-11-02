@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ActiveAdmin-Globalize3-inputs (0.0.1)
+      activeadmin
+      globalize3
     actionmailer (3.2.8)
       actionpack (= 3.2.8)
       mail (~> 2.4.4)
@@ -228,6 +231,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ActiveAdmin-Globalize3-inputs
   activeadmin
   awesome_print
   capybara

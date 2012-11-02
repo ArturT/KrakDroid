@@ -44,8 +44,9 @@ gem 'jquery-ui-rails'
 gem 'jquery_datepicker'
 
 gem 'activeadmin'
+gem 'ActiveAdmin-Globalize3-inputs'
 gem 'globalize3'
-gem "paperclip", "~> 3.0"
+gem 'paperclip', '~> 3.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
