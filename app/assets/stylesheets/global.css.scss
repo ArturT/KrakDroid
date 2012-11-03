@@ -1,7 +1,10 @@
 // variables
 $container_with: 1024px;
-$footer_inner_width: 960px;
+$inner_width: 960px;
 $container_padding: 38px;
+$white_header_left_padding: 30px; // 30px is width between left corner and white circle
+$number_width: 30px; // white circle width
+$title_padding_left: 15px;
 $font_green: #60a600;
 
 body {
@@ -11,10 +14,62 @@ body {
 }
 
 .container {
+  overflow: hidden;
   margin: 0 auto;
   width: $container_with;
-  min-height: 200px;
   background: image-url('layout/vertical_pattern.png') repeat-y;
+
+  .container_inner {
+    width: $inner_width;
+    float: right;
+
+    .logo_div {
+      background: image-url('layout/logo.png');
+      height: 577px;
+    }
+
+    .txt_bottom_shadow {
+      background: image-url('layout/txt_bottom_shadow.png') bottom no-repeat;
+      min-height: 153+66px;
+
+      .header_1st {
+        height: 153px;
+        background: image-url('layout/header_1st.png')
+      }
+
+      .header_n {
+        height: 153px;
+        background: image-url('layout/header_n.png')
+      }
+
+      .white_header {
+        padding: 0 $container_padding 0 $white_header_left_padding;
+        font-family: RobotoBold;
+        font-size: 18px;
+        color: #fff;
+        overflow: hidden;
+        padding-top: 22px; // distance between top black corner and white text
+
+        .number {
+          float: left;
+          width: $number_width;
+          text-align: center;
+          //border: 1px solid red;
+        }
+
+        .title {
+          float: left;
+          padding-left: $title_padding_left;
+          width: $inner_width - $white_header_left_padding - $number_width - $title_padding_left - $container_padding;
+
+          .right_box {
+            float: right;
+            min-width: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .footer {
@@ -22,6 +77,7 @@ body {
   height: 64px;
   background: image-url('layout/footer2.png');
   margin-top: -12px;
+  position: relative;
 }
 
 .footer_container {
@@ -34,7 +90,7 @@ body {
   color: #60a600;
 
   .footer_inner {
-    width: $footer_inner_width - 2*$container_padding;
+    width: $inner_width - 2*$container_padding;
     padding: 0 $container_padding;
     float: right;
   }
