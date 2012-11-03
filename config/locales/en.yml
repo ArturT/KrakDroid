@@ -3,3 +3,5 @@
 
 en:
   hello: "Hello world"
+  footer:
+    text_left: "15 December 2012 | Cracow University of Technology"

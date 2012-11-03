@@ -3,6 +3,8 @@
 
 pl:
   hello: "Witaj Świecie!"
+  footer:
+    text_left: "15 Grudnia 2012 | Politechnika Krakowska"
 
   # https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/pl.yml
   date:
