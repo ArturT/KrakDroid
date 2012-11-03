@@ -1,5 +1,7 @@
 // variables
 $container_with: 1024px;
+$footer_inner_width: 960px;
+$container_padding: 38px;
 $font_green: #60a600;
 
 body {
@@ -24,16 +26,23 @@ body {
 
 .footer_container {
   margin: 0 auto;
-  padding-top: 28px;
+  padding-top: 30px;
   width: $container_with;
   font-family: RobotoBold;
   font-size: 14px;
+  text-shadow: 1px 1px #add600;
   color: #60a600;
+
+  .footer_inner {
+    width: $footer_inner_width - 2*$container_padding;
+    padding: 0 $container_padding;
+    float: right;
+  }
 
   .text_left {
     float: left;
   }
-  
+
   .text_right {
     float: right;
   }
