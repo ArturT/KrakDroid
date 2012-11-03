@@ -1,13 +1,18 @@
 // variables
 $container_with: 1024px;
 $inner_width: 960px;
-$container_padding: 38px;
+$container_padding: 30px;
 $white_header_padding_left: 30px; // 30px is width between left corner and white circle
 $white_header_padding_top: 22px; // distance between top black corner and white text
 $number_width: 30px; // white circle width
 $title_padding_left: 15px;
-$font_green: #60a600;
 
+// colors
+$green: #60a600;
+$gray: #999;
+$gray_underline: #b2b2b2;
+
+// css
 body {
   margin: 0;
   padding: 0;
@@ -74,6 +79,33 @@ body {
       .content {
         padding: 0 $container_padding;
         padding-bottom: 30px;
+
+        .left {
+          float: left;
+          width: 50%;
+        }
+
+        .right {
+          float: right;
+          width: 50%;
+        }
+
+        h2 {
+          margin: 0 0 17px 0;
+          padding: 0 8px 4px 8px;
+          text-transform: uppercase;
+          color: $gray;
+          font-family: RobotoBold;
+          font-size: 14px;
+          text-decoration: none;
+          font-weight: normal;
+          border-bottom: 2px solid $gray_underline;
+          width: 328px;
+        }
+
+        .text {
+          padding: 0 8px;
+        }
       }
     }
   }
@@ -111,7 +143,7 @@ body {
   }
 
   a {
-    color: $font_green;
+    color: $green;
     text-decoration: none;
   }
 }
