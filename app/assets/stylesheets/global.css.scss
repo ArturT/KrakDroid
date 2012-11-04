@@ -38,15 +38,34 @@ body {
     .txt_bottom_shadow {
       background: image-url('layout/txt_bottom_shadow.png') bottom no-repeat;
       min-height: 153+66px;
+      position: relative;
+
+      .header_side_left {
+        background: image-url('layout/header_side_l.png');
+        width: 23px;
+        height: 83px;
+        position: absolute;
+        top: -22px;
+        left: -23px;
+      }
+
+      .header_side_right {
+        background: image-url('layout/header_side_r.png');
+        width: 23px;
+        height: 84px;
+        position: absolute;
+        top: -22px;
+        right: -10px;
+      }
 
       .header_1st {
         height: 153px;
-        background: image-url('layout/header_1st.png')
+        background: image-url('layout/header_1st.png');
       }
 
       .header_n {
         height: 153px;
-        background: image-url('layout/header_n.png')
+        background: image-url('layout/header_n.png');
       }
 
       .white_header {
