@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>KrakDroid</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>KrakDroid</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_inner">
+        <div class="logo_div"></div>
+        <%= yield %>
+      </div>
+    </div>
 
-<%= yield %>
+    <div class="footer">
+      <div class="footer_container">
+        <div class="footer_inner">
+          <div class="text_left">
+            KrakDroid.pl | <%= t 'footer.text_left' %>
+          </div>
+          <div class="text_right">
+            &copy; All rights reserved | Design by <%= link_to 'Rafał Trzop', 'http://www.rafaltrzop.com' %> | Coding by <%= link_to 'Artur Trzop', 'http://www.webook.pl' %>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<% if Rails.env.production? %>
-<script type="text/javascript">
+    <% if Rails.env.production? %>
+      <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1985994-34']);
-  _gaq.push(['_trackPageview']);
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1985994-34']);
+        _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
 
-</script>
-<% end %>
-</body>
-</html>
+       </script>
+     <% end %>
+   </body>
+ </html>
