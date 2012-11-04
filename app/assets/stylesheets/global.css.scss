@@ -1,5 +1,6 @@
 // variables
-$container_with: 1024px;
+$header_side_width: 23px;
+$container_with: 1024px + $header_side_width;
 $inner_width: 960px;
 $container_padding: 30px;
 $white_header_padding_left: 30px; // 30px is width between left corner and white circle
@@ -29,6 +30,7 @@ body {
   .container_inner {
     width: $inner_width;
     float: right;
+    margin-right: $header_side_width;
 
     .logo_div {
       background: image-url('layout/logo.png');
@@ -42,20 +44,20 @@ body {
 
       .header_side_left {
         background: image-url('layout/header_side_l.png');
-        width: 23px;
+        width: $header_side_width;
         height: 83px;
         position: absolute;
         top: -22px;
-        left: -23px;
+        left: -$header_side_width;
       }
 
       .header_side_right {
         background: image-url('layout/header_side_r.png');
-        width: 23px;
+        width: $header_side_width;
         height: 84px;
         position: absolute;
-        top: -22px;
-        right: -10px;
+        top: 7px;
+        right: -$header_side_width;
       }
 
       .header_1st {
@@ -75,7 +77,7 @@ body {
         color: #fff;
         overflow: hidden;
         padding-top: $white_header_padding_top;
-        height: 85px - $white_header_padding_top;
+        height: 82px - $white_header_padding_top;
 
         .number {
           float: left;
@@ -87,6 +89,13 @@ body {
           float: left;
           padding-left: $title_padding_left;
           width: $inner_width - $white_header_padding_left - $number_width - $title_padding_left - $container_padding;
+
+          h1 {
+            font-family: RobotoBold;
+            font-size: 18px;
+            font-weight: normal;
+            display: inline;
+          }
 
           .right_box {
             float: right;
@@ -101,17 +110,17 @@ body {
 
         .left {
           float: left;
-          width: 50%;
+          width: 423px;
         }
 
         .right {
           float: right;
-          width: 50%;
+          width: 423px;
         }
 
         h2 {
-          margin: 0 0 17px 0;
-          padding: 0 8px 4px 8px;
+          margin: 0 0 14px 0;
+          padding: 0 8px 2px 8px;
           text-transform: uppercase;
           color: $gray;
           font-family: RobotoBold;
@@ -119,11 +128,12 @@ body {
           text-decoration: none;
           font-weight: normal;
           border-bottom: 2px solid $gray_underline;
-          width: 328px;
+          width: 328px - 8px - 8px; // minus paddings
         }
 
         .text {
-          padding: 0 8px;
+          padding-left: 8px;
+          text-align: justify;
         }
       }
     }
