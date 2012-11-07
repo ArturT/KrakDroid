@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>KrakDroid</title>
+    <meta name="robots" content="index,follow,all" />
+    <title><%= t 'meta.title' %></title>
+    <meta name="description" content="<%= t 'meta.description' %>" />
+    <meta name="keywords" content="<%= t 'meta.keywords' %>" />
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>

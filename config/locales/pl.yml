@@ -3,6 +3,10 @@
 
 pl:
   hello: "Witaj Świecie!"
+  meta:
+    title: "KrakDroid"
+    description: "Konferencja dotycząca systemów mobilnych. Kraków 15 grudnia 2012."
+    keywords: "mobile, systemy mobilne, telefony, android, iOS, linux, kraków, cracow, konferencja it"
   page:
     what_where_how:
       title: 'Co? Gdzie? Jak?'

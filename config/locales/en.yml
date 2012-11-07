@@ -3,6 +3,10 @@
 
 en:
   hello: "Hello world"
+  meta:
+    title: "KrakDroid"
+    description: "Mobile conference in Cracow"
+    keywords: "mobile, android, iOS, smartphones, linux, cracow, it conference"
   page:
     what_where_how:
       title: 'What? Where? How?'
