@@ -1,0 +1,21 @@
+<div class="txt_bottom_shadow">
+  <div class="<%= first_header ? 'header_1st' : 'header_n' %>">
+    <div class="white_header">
+      <div class="number" id="<%= @number %>">
+        <%= @number %>
+      </div>
+      <div class="title">
+        <% if content_for? :right_box %>
+          <div class="right_box">
+            <%= content_for :right_box %>
+          </div>
+        <% end %>
+        <h1><%= @title %></h1>
+      </div>
+    </div>
+    <div class="content">
+      <%= content_for :content %>
+    </div>
+  </div>
+</div>
+
