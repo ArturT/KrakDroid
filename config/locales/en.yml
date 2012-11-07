@@ -3,5 +3,8 @@
 
 en:
   hello: "Hello world"
+  page:
+    what_where_how:
+      title: 'What? Where? How?'
   footer:
     text_left: "15 December 2012 | Cracow University of Technology"

@@ -3,5 +3,8 @@
 
 pl:
   hello: "Witaj Świecie!"
+  page:
+    what_where_how:
+      title: 'Co? Gdzie? Jak?'
   footer:
     text_left: "15 Grudnia 2012 | Politechnika Krakowska"
