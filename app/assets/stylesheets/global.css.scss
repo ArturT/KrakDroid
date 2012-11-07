@@ -112,6 +112,21 @@ body {
           .right_box {
             float: right;
             min-width: 10px;
+
+            .facebook_button {
+              float: right;
+              overflow: visible;
+            }
+
+            .google_plus_button {
+              float: right;
+              padding-right: 10px;
+            }
+
+            .twitter_button {
+              float: right;
+              padding-right: 10px;
+            }
           }
         }
       }
