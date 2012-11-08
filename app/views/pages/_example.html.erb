@@ -1,14 +1,7 @@
-<%
-@first_header = false
-@number = 0
-@title = t 'page.'
-@right_box = nil
-%>
-
-<% @right_box = capture do %>
+<% right_box = capture do %>
 <% end %>
 
-<% @content = capture do %>
+<% content = capture do %>
   <div class="left">
     <h2></h2>
     <div class="text">
@@ -27,3 +20,11 @@
 
   </div>
 <% end %>
+
+<%= render 'layouts/header',
+  first_header: false,
+  number: 0,
+  title: t('page.'),
+  right_box: nil,
+  content: content
+%>

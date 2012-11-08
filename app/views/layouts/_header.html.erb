@@ -3,22 +3,22 @@
   <div class="header_side_right"></div>
 </div>
 <div class="txt_bottom_shadow">
-  <div class="<%= @first_header ? 'header_1st' : 'header_n' %>">
+  <div class="<%= first_header ? 'header_1st' : 'header_n' %>">
     <div class="white_header">
-      <div class="number" id="<%= @number %>">
-        <%= @number %>
+      <div class="number" id="<%= number %>">
+        <%= number %>
       </div>
       <div class="title">
-        <% unless @right_box.nil? %>
+        <% unless right_box.nil? %>
           <div class="right_box">
-            <%= @right_box %>
+            <%= right_box %>
           </div>
         <% end %>
-        <h1><%= @title %></h1>
+        <h1><%= title %></h1>
       </div>
     </div>
     <div class="content">
-      <%= @content %>
+      <%= content %>
     </div>
   </div>
 </div>

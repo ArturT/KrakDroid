@@ -1,11 +1,4 @@
-<%
-@first_header = false
-@number = 2
-@title = t 'page.contact.title'
-@right_box = nil
-%>
-
-<% @content = capture do %>
+<% content = capture do %>
   <div class="text">
 
   </div>
@@ -24,4 +17,10 @@
   </div>
 <% end %>
 
-<%= render 'layouts/header' %>
+<%= render 'layouts/header',
+  first_header: false,
+  number: 2,
+  title: t('page.contact.title'),
+  right_box: nil,
+  content: content
+%>

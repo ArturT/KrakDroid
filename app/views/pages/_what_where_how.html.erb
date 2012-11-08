@@ -1,10 +1,4 @@
-<%
-@first_header = true
-@number = 1
-@title = t 'page.what_where_how.title'
-%>
-
-<% @right_box = capture do %>
+<% right_box = capture do %>
   <div class="social_buttons">
     <!-- facebook -->
     <div class="facebook_button">
@@ -24,7 +18,7 @@
   </div>
 <% end %>
 
-<% @content = capture do %>
+<% content = capture do %>
   <div class="left">
     <h2><%= t 'page.what_where_how.what_is_krakdroid_title' %></h2>
     <div class="text">
@@ -43,4 +37,10 @@
   </div>
 <% end %>
 
-<%= render 'layouts/header' %>
+<%= render 'layouts/header',
+  first_header: true,
+  number: 1,
+  title: t('page.what_where_how.title'),
+  right_box: right_box,
+  content: content
+%>
