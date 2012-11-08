@@ -37,6 +37,19 @@ a:hover {
   text-decoration: underline;
 }
 
+.choose_language {
+  width: $inner_width - 2*$container_padding;
+  font-family: RobotoBold;
+  margin: 0 auto;
+  text-align: right;
+  padding-top: $container_padding/1.5;
+  text-shadow: 1px 1px #fff;
+
+  u {
+    color: $gray;
+  }
+}
+
 .container {
   overflow: hidden;
   margin: 0 auto;
