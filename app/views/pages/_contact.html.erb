@@ -1,7 +1,8 @@
 <% @number = 2 %>
 <% @title = t 'page.contact.title' %>
+<% @right_box = nil %>
 
-<% content_for :content do %>
+<% @content = capture do %>
   <div class="text">
 
   </div>
@@ -19,3 +20,5 @@
     </div>
   </div>
 <% end %>
+
+<%= render 'layouts/header' %>

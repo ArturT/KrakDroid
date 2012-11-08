@@ -1,10 +1,11 @@
 <% @number = 0 %>
 <% @title = t 'page.' %>
+<% @right_box = nil %>
 
-<% content_for :right_box do %>
+<% @right_box = capture do %>
 <% end %>
 
-<% content_for :content do %>
+<% @content = capture do %>
   <div class="left">
     <h2></h2>
     <div class="text">

@@ -1,7 +1,7 @@
 <% @number = 1 %>
 <% @title = t 'page.what_where_how.title' %>
 
-<% content_for :right_box do %>
+<% @right_box = capture do %>
   <div class="social_buttons">
     <!-- facebook -->
     <div class="facebook_button">
@@ -21,7 +21,7 @@
   </div>
 <% end %>
 
-<% content_for :content do %>
+<% @content = capture do %>
   <div class="left">
     <h2><%= t 'page.what_where_how.what_is_krakdroid_title' %></h2>
     <div class="text">
@@ -39,3 +39,5 @@
     </div>
   </div>
 <% end %>
+
+<%= render 'layouts/header' %>
