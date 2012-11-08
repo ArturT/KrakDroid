@@ -195,7 +195,7 @@ body {
 
   .footer_inner {
     width: $inner_width - 2*$container_padding;
-    padding: 0 $container_padding;
+    padding: 0 $container_padding + $header_side_width 0 $container_padding;
     float: right;
   }
 
