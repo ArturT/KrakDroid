@@ -16,5 +16,12 @@ pl:
       partners_title: 'Partnerzy'
     contact:
       title: 'Dojazd i kontakt'
+      we_are_here:
+        title: 'Jesteśmy tutaj'
+        description_html: 'Konferencja KrakDroid odbędzie się 15 Grudnia 2012 na Wydziale Mechanicznym Politechniki Krakowskiej w aulach A1 oraz A2. Zapraszamy do głównego budynku, patrz zielona strzałka na mapie.'
+      write_to_us:
+        title: 'Napisz do nas'
+        description_html: 'Czekamy na twoje komentarze na Facebooku, Google+ i Twitterze.'
+
   footer:
     text_left: "15 Grudnia 2012 | Politechnika Krakowska"

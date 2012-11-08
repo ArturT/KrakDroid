@@ -16,5 +16,12 @@ en:
       partners_title: 'Partners'
     contact:
       title: 'Location and contact'
+      we_are_here:
+        title: "We are here"
+        description_html: 'KrakDroid conference will be held 15 December 2012 at the Faculty of Mechanical Engineering of Cracow University of Technology. Assembly hall A1 and A2 in main building (see green arrow on map).'
+      write_to_us:
+        title: 'Write to us'
+        description_html: 'Feel free to write on Facebook, Google+ and Twitter.'
+
   footer:
     text_left: "15 December 2012 | Cracow University of Technology"
