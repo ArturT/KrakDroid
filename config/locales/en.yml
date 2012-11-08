@@ -5,13 +5,13 @@ en:
   hello: "Hello world"
   meta:
     title: "KrakDroid"
-    description: "Mobile conference in Cracow"
-    keywords: "mobile, android, iOS, smartphones, linux, cracow, it conference"
+    description: "Android conference in Cracow"
+    keywords: "mobile, android, smartphones, linux, cracow, it conference"
   page:
     what_where_how:
       title: 'What? Where? How?'
       what_is_krakdroid_title: 'What is KrakDroid?'
-      conference_description_html: "KrakDroid - conference on mobile systems - will be held <strong>15 December 2012</strong> in Cracow. More information coming soon."
+      conference_description_html: "KrakDroid - conference on Android system - will be held <strong>15 December 2012</strong> in Cracow. More information coming soon."
       sponsors_title: 'Sponsors'
       become_a_sponsore_html: '<a href="mailto:heniekk@gmail.com">Become a sponsor</a>'
       partners_title: 'Partners'
