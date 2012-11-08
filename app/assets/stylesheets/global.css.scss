@@ -28,6 +28,15 @@ body {
   margin-bottom: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: #1285d4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .container {
   overflow: hidden;
   margin: 0 auto;
