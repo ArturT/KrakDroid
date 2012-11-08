@@ -14,5 +14,7 @@ en:
       conference_description_html: "KrakDroid - conference on mobile systems - will be held <strong>15 December 2012</strong> in Cracow. More information coming soon."
       sponsors_title: 'Sponsors'
       partners_title: 'Partners'
+    contact:
+      title: 'Location and contact'
   footer:
     text_left: "15 December 2012 | Cracow University of Technology"
