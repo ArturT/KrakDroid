@@ -10,5 +10,9 @@ en:
   page:
     what_where_how:
       title: 'What? Where? How?'
+      what_is_krakdroid_title: 'What is KrakDroid?'
+      conference_description_html: "KrakDroid - conference on mobile systems - will be held <strong>15 December 2012</strong> in Cracow. More information coming soon."
+      sponsors_title: 'Sponsors'
+      partners_title: 'Partners'
   footer:
     text_left: "15 December 2012 | Cracow University of Technology"
