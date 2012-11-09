@@ -7,6 +7,8 @@ en:
     title: "KrakDroid"
     description: "Android conference in Cracow"
     keywords: "mobile, android, smartphones, linux, cracow, it conference"
+  logo:
+    call_for_papers: "You want to be a speaker at our conference? You're welcome!"
   page:
     what_where_how:
       title: 'What? Where? How?'
