@@ -9,6 +9,7 @@ en:
     keywords: "mobile, android, smartphones, linux, cracow, it conference"
   logo:
     call_for_papers_html: "Want to share your knowledge as a speaker? Feel free to submit your proposal!"
+    call_for_papers_button: 'Call for papers'
   page:
     what_where_how:
       title: 'What? Where? How?'
