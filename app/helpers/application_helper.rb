@@ -10,9 +10,9 @@ module ApplicationHelper
     en = link_to 'EN', '/en'
 
     if lang == 'en'
-      raw "#{pl} <u>EN</u>"
+      raw "#{pl} <span>EN</span>"
     else
-      raw "<u>PL</u> #{en}"
+      raw "<span>PL</span> #{en}"
     end
   end
 end
