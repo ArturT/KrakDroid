@@ -8,7 +8,7 @@ pl:
     description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 15 grudnia 2012."
     keywords: "mobile, systemy mobilne, telefony, android, linux, kraków, cracow, konferencja it"
   logo:
-    call_for_papers_html: 'Podziel się swoim doświadczeniem i zostań prelegentem na KrakDroid.'
+    call_for_papers_html: 'Podziel się swoim doświadczeniem<br /> i zostań prelegentem na KrakDroid.'
   page:
     what_where_how:
       title: 'Co? Gdzie? Jak?'
@@ -21,10 +21,9 @@ pl:
       title: 'Dojazd i kontakt'
       we_are_here:
         title: 'Jesteśmy tutaj'
-        description_html: 'Konferencja KrakDroid odbędzie się 15 Grudnia 2012 na Wydziale Mechanicznym Politechniki Krakowskiej w aulach A1 oraz A2. Zapraszamy do głównego budynku, patrz zielona strzałka na mapie.'
+        description_html: 'Konferencja KrakDroid odbędzie się 15 Grudnia 2012 na Wydziale Mechanicznym Politechniki Krakowskiej. Zapraszamy do głównego budynku, patrz zielona strzałka na mapie.'
       write_to_us:
         title: 'Napisz do nas'
         description_html: 'Czekamy na twoje komentarze na <a href="https://www.facebook.com/KrakDroid">Facebooku</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> i <a href="https://twitter.com/KrakDroid">Twitterze</a>.'
-
   footer:
     text_left: "15 Grudnia 2012 | Politechnika Krakowska"
