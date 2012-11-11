@@ -6,8 +6,11 @@ arrow_time = 30000
 # *************************************************************
 # binging
 jQuery ->
-  $("#arrow").click ->
+  $('#arrow').click ->
     go_to_by_scroll('.container:first', 0, 0)
+    $('#arrow').transition
+      perspective: '100px'
+      rotateY: '+=360deg'
 
   setTimeout ->
     arrow_animation()
