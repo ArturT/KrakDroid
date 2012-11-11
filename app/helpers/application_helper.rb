@@ -1,6 +1,6 @@
 module ApplicationHelper
   def banner(img, url, title)
-    raw %{<div class="banner_container">#{link_to(image_tag(image_path(img)), url, title: title)}</div>}
+    raw %{<div class="banner_container">#{link_to(image_tag(image_path(img)), url, title: title, target: '_blank')}</div>}
   end
 
   def choose_language
