@@ -68,9 +68,9 @@ a.button {
 #arrow {
   width: 59px;
   height: 196px;
-  background: image-url('layout/to_the_top_arrow.png');
+  background: image-url('layout/to_the_top_arrow.png') no-repeat;
   position: fixed;
-  bottom: -15px;
+  bottom: -20px;
   z-index: 99999;
   cursor: pointer;
 }
