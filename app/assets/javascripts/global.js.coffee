@@ -1,4 +1,10 @@
 # *************************************************************
+# binging
+jQuery ->
+  $("#arrow").click ->
+    go_to_by_scroll('.container:first', 0, 0)
+
+# *************************************************************
 # window namespace
 window.go_to_by_scroll = (obj, allowed_margin, up_limit) ->
   current = $(document).scrollTop()

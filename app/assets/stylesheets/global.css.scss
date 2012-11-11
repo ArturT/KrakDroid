@@ -56,6 +56,25 @@ a.button {
   line-height: 28px;
 }
 
+#arrow_container {
+  position: relative;
+}
+
+#arrow_container_inner {
+  position: absolute;
+  right: 30px;
+}
+
+#arrow {
+  width: 59px;
+  height: 196px;
+  background: image-url('layout/to_the_top_arrow.png');
+  position: fixed;
+  bottom: -15px;
+  z-index: 99999;
+  cursor: pointer;
+}
+
 .call_for_papers {
  left: $inner_width - 155px;
  width: 300px;
