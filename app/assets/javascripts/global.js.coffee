@@ -1,6 +1,7 @@
 # *************************************************************
 # variables
 arrow_time = 30000
+arrow_animation_lock = false
 
 
 # *************************************************************
@@ -14,9 +15,7 @@ jQuery ->
       rotateY: '+=360deg'
 
   # run arrow animation
-  setTimeout ->
-    arrow_animation()
-  , arrow_time
+  run_arrow_animation()
 
   # hide arrow
   $("#top_hook").waypoint ((event, direction) ->
@@ -39,6 +38,12 @@ jQuery ->
   ),
     offset: "-20"
 
+  # arrow mouseenter
+  $('#arrow').mouseenter ->
+    arrow_animation_lock = true
+  .mouseleave ->
+    arrow_animation_lock = false
+
 
 # *************************************************************
 # window namespace
@@ -55,20 +60,27 @@ window.go_to_by_scroll = (obj, allowed_margin, up_limit) ->
 
 # *************************************************************
 # Private functions
+run_arrow_animation = ->
+  setTimeout ->
+    arrow_animation()
+  , arrow_time
+
 arrow_animation = ->
   speed = 200
-  $('#arrow').animate(
-    'padding-bottom': '10px'
-  , speed)
-  .animate(
-    'padding-bottom': '0px'
-  , speed)
-  .animate(
-    'padding-bottom': '10px'
-  , speed)
-  .animate(
-    'padding-bottom': '0px'
-  , speed, ->
-    setTimeout ->
-      arrow_animation()
-    , arrow_time)
+  unless arrow_animation_lock
+    $('#arrow').animate(
+      'padding-bottom': '10px'
+    , speed)
+    .animate(
+      'padding-bottom': '0px'
+    , speed)
+    .animate(
+      'padding-bottom': '10px'
+    , speed)
+    .animate(
+      'padding-bottom': '0px'
+    , speed, ->
+      run_arrow_animation())
+  else
+    run_arrow_animation()
+
