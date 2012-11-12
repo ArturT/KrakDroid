@@ -32,6 +32,10 @@ body {
 a {
   text-decoration: none;
   color: #1285d4;
+
+  img {
+    border: 0;
+  }
 }
 
 a:hover {
@@ -73,6 +77,8 @@ a.button {
   bottom: -20px;
   z-index: 99999;
   cursor: pointer;
+  opacity: 0;
+  display: none;
 }
 
 .call_for_papers {

@@ -6,15 +6,38 @@ arrow_time = 30000
 # *************************************************************
 # binging
 jQuery ->
+  # click on arrow
   $('#arrow').click ->
     go_to_by_scroll('.container:first', 0, 0)
     $('#arrow').transition
       perspective: '100px'
       rotateY: '+=360deg'
 
+  # run arrow animation
   setTimeout ->
     arrow_animation()
   , arrow_time
+
+  # hide arrow
+  $("#top_hook").waypoint ((event, direction) ->
+    if direction is "up"
+      #console.log "hide"
+      $('#arrow').animate
+        opacity: 0
+      , 400, ->
+        $(this).css('display', 'none')
+  ),
+    offset: "-5"
+
+  # show arrow
+  $("#top_second_hook").waypoint ((event, direction) ->
+    if direction is "down"
+      #console.log "show"
+      $('#arrow').css('display', 'block').animate(
+        opacity: 1
+      , 400)
+  ),
+    offset: "-20"
 
 
 # *************************************************************
