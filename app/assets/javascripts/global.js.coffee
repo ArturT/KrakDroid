@@ -1,6 +1,7 @@
 # *************************************************************
 # variables
 arrow_time = 30000
+arrow_speed = 200
 arrow_animation_lock = false
 
 
@@ -41,8 +42,14 @@ jQuery ->
   # arrow mouseenter
   $('#arrow').mouseenter ->
     arrow_animation_lock = true
+    $('#arrow').animate(
+      'padding-bottom': '5px'
+    , arrow_speed)
   .mouseleave ->
     arrow_animation_lock = false
+    $('#arrow').animate(
+      'padding-bottom': '0'
+    , arrow_speed)
 
 
 # *************************************************************
@@ -66,20 +73,19 @@ run_arrow_animation = ->
   , arrow_time
 
 arrow_animation = ->
-  speed = 200
   unless arrow_animation_lock
     $('#arrow').animate(
       'padding-bottom': '10px'
-    , speed)
+    , arrow_speed)
     .animate(
       'padding-bottom': '0px'
-    , speed)
+    , arrow_speed)
     .animate(
       'padding-bottom': '10px'
-    , speed)
+    , arrow_speed)
     .animate(
       'padding-bottom': '0px'
-    , speed, ->
+    , arrow_speed, ->
       run_arrow_animation())
   else
     run_arrow_animation()
