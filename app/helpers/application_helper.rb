@@ -15,4 +15,8 @@ module ApplicationHelper
       raw "<span>PL</span> #{en}"
     end
   end
+
+  def speaker_photo(photo_url)
+    raw %{<div class="photo" style="background-image: url(#{asset_path(photo_url)});"></div>}
+  end
 end

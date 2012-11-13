@@ -1,7 +1,9 @@
 <% content = capture do %>
   <div class="speaker_container" id="speaker_id">
     <div class="left">
-      <%= image_tag(asset_path('speakers/mmskrzyp.jpg'), class: 'photo') %>
+      <div class="text">
+        <%= speaker_photo('speakers/mmskrzyp.jpg') %>
+      </div>
     </div>
     <div class="right">
       <h2>Imię Nazwisko</h2>

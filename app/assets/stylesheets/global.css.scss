@@ -280,7 +280,9 @@ a.button {
 
           .photo {
             width: 140px;
-            right: 140px;
+            height: 140px;
+            border-radius: 70px;
+            background-size: 120%;
           }
         }
       }
