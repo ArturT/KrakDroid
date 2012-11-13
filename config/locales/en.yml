@@ -18,6 +18,10 @@ en:
       sponsors_title: 'Sponsors'
       become_a_sponsore_html: '<a href="mailto:heniekk@gmail.com">Become a sponsor</a>'
       partners_title: 'Partners'
+    speakers:
+      title: 'Speakers'
+    schedule:
+      title: 'Agenda'
     contact:
       title: 'Location and contact'
       we_are_here:

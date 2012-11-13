@@ -18,6 +18,10 @@ pl:
       sponsors_title: 'Sponsorzy'
       become_a_sponsore_html: '<a href="mailto:heniekk@gmail.com">Zostań sponsorem</a>'
       partners_title: 'Partnerzy'
+    speakers:
+      title: 'Lista prelegentów'
+    schedule:
+      title: 'Agenda konferencji'
     contact:
       title: 'Dojazd i kontakt'
       we_are_here:

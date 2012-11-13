@@ -1,0 +1,27 @@
+<% content = capture do %>
+  <div class="left">
+    <h2></h2>
+    <div class="text">
+
+    </div>
+  </div>
+  <div class="right">
+    <h2></h2>
+    <div class="text">
+
+    </div>
+  </div>
+
+  <h2></h2>
+  <div class="text">
+
+  </div>
+<% end %>
+
+<%= render 'layouts/header',
+  first_header: false,
+  number: 3,
+  title: t('page.schedule.title'),
+  right_box: nil,
+  content: content
+%>
