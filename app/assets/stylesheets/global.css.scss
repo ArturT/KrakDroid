@@ -16,6 +16,9 @@ $gray: #999;
 $light_gray: #cfcfcf;
 $very_light_gray: #f2f2f2;
 $gray_underline: #b2b2b2;
+$medium_blue: #008fdc;
+$light_blue: #00b5e9;
+$hard_blue: #024d94;
 
 // css
 body {
@@ -24,6 +27,10 @@ body {
   font-family: RobotoRegular;
   font-size: 14px;
   color: #171717;
+}
+
+.relative {
+  position: relative;
 }
 
 .banner_container {
@@ -305,6 +312,26 @@ a.button {
           td {
             min-width: 30px;
             padding: 7px;
+            vertical-align: middle;
+
+            .strap {
+              position: absolute;
+              width: 98px; //49px one cell with right border
+              margin: -9px 0 0 -8px; // to move one cell right set margin-left: -8px + 49px
+              opacity: 0.7;
+              background: $medium_blue;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+
+              .dot {
+                $dot_border: 10px;
+                width: $dot_border;
+                height: $dot_border;
+                margin: 4px 7px;
+                border-radius: $dot_border/2;
+                background: $light_blue;
+              }
+            }
           }
 
           .topic {
