@@ -13,6 +13,8 @@ $choose_language_padding: 10px;
 // colors
 $green: #60a600;
 $gray: #999;
+$light_gray: #cfcfcf;
+$very_light_gray: #f2f2f2;
 $gray_underline: #b2b2b2;
 
 // css
@@ -251,6 +253,11 @@ a.button {
           width: 431px;
         }
 
+        .box {
+          float: left;
+          width: 100%;
+        }
+
         h2 {
           margin: 0 0 14px 0;
           padding: 0 8px 2px 8px;
@@ -287,6 +294,41 @@ a.button {
             border-radius: 70px;
             background-size: 120%;
             margin-top: 24px;
+          }
+        }
+
+        .schedule {
+          width: 100%;
+          border-spacing: 0;
+          text-align: left;
+
+          td {
+            min-width: 30px;
+            padding: 7px;
+          }
+
+          .topic {
+            width: 300px;
+            padding: 7px 10px;
+          }
+
+          tr.header {
+            td {
+              padding: 0;
+              padding-bottom: 5px;
+            }
+          }
+
+          tr.row {
+            td {
+              border-right: 1px solid $light_gray;
+            }
+          }
+
+          tr.gray_bg {
+            td {
+              background: $very_light_gray;
+            }
           }
         }
       }
