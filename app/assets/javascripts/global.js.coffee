@@ -93,6 +93,17 @@ window.go_to_by_scroll = (obj, allowed_margin, up_limit) ->
     $('html,body').animate
       scrollTop: destination, 'slow'
 
+window.jump_to_speaker = (obj, speaker_id) ->
+  #console.log('jump to speaker')
+  $(obj).transition
+    perspective: '100px'
+    rotateX: '+=360deg'
+  , 600
+
+  setTimeout(->
+    go_to_by_scroll(speaker_id, 0, 20)
+  , 200)
+
 
 # *************************************************************
 # Private functions
