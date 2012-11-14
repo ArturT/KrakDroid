@@ -3,6 +3,7 @@
 arrow_time = 30000
 arrow_speed = 200
 arrow_animation_lock = false
+dot_animation_lock = false
 
 
 # *************************************************************
@@ -50,6 +51,34 @@ jQuery ->
     $('#arrow').animate(
       'padding-bottom': '0'
     , arrow_speed)
+
+  # schedule dots animation
+  $('div.strap').mouseenter ->
+    unless dot_animation_lock
+      dot_animation_lock = true
+
+      dot = $(this).find('.dot')
+      dot_width = dot.width()
+      dot_margin_left = dot.css('margin-left')
+      dot_bg = dot.css('background-color')
+
+      dot.animate(
+        width: '20px',
+        backgroundColor: '#7fd600'
+      , 200, ->
+        $(this).animate(
+          width: "#{dot_width}px",
+          marginLeft: '20px'
+        , 200, ->
+          $(this).animate(
+            width: "#{dot_width}px",
+            marginLeft: dot_margin_left,
+            backgroundColor: dot_bg
+          , 300, ->
+            dot_animation_lock = false
+          )
+        )
+      )
 
 
 # *************************************************************

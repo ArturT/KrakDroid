@@ -12,6 +12,7 @@ $choose_language_padding: 10px;
 
 // colors
 $green: #60a600;
+$light_green: #7fd600;
 $gray: #999;
 $light_gray: #cfcfcf;
 $very_light_gray: #f2f2f2;
@@ -331,6 +332,10 @@ a.button {
                 border-radius: $dot_border/2;
                 background: $light_blue;
               }
+            }
+
+            .strap:hover {
+              opacity: 0.9;
             }
           }
 
