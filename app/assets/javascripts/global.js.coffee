@@ -4,6 +4,7 @@ arrow_time = 30000
 arrow_speed = 200
 arrow_animation_lock = false
 dot_animation_lock = false
+photo_animation_lock = false
 
 
 # *************************************************************
@@ -80,6 +81,23 @@ jQuery ->
           )
         )
       )
+
+  # speaker photo animation
+  $('.speaker_container').mouseenter ->
+    unless photo_animation_lock
+      photo_animation_lock = true
+      photo = $(this).find('.photo')
+      photo.transition
+        perspective: '200px'
+        rotateX: '+=10deg'
+        rotateY: '+=10deg'
+      , ->
+        photo.transition
+          perspective: '200px'
+          rotateX: '-=10deg'
+          rotateY: '-=10deg'
+        , ->
+          photo_animation_lock = false
 
 
 # *************************************************************
