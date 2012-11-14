@@ -75,6 +75,10 @@ a.button {
   line-height: 28px;
 }
 
+a.button:hover {
+  opacity: .8;
+}
+
 #arrow_container {
   position: relative;
 }
