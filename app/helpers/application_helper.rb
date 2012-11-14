@@ -17,6 +17,6 @@ module ApplicationHelper
   end
 
   def speaker_photo(photo_url)
-    raw %{<div class="photo" style="background-image: url(#{asset_path(photo_url)});"></div>}
+    raw %{<div class="circle photo" style="background-image: url(#{asset_path(photo_url)});"><div class="circle gray_layer"></div></div>}
   end
 end

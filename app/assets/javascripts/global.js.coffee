@@ -84,20 +84,27 @@ jQuery ->
 
   # speaker photo animation
   $('.speaker_container').mouseenter ->
-    unless photo_animation_lock
-      photo_animation_lock = true
-      photo = $(this).find('.photo')
-      photo.transition
-        perspective: '200px'
-        rotateX: '+=10deg'
-        rotateY: '+=10deg'
-      , ->
-        photo.transition
-          perspective: '200px'
-          rotateX: '-=10deg'
-          rotateY: '-=10deg'
-        , ->
-          photo_animation_lock = false
+    $(this).find('.gray_layer').animate
+      opacity: 0
+  .mouseleave ->
+    $(this).find('.gray_layer').animate
+      opacity: 0.2
+
+  #$('.speaker_container').mouseenter ->
+    #unless photo_animation_lock
+      #photo_animation_lock = true
+      #photo = $(this).find('.photo')
+      #photo.transition
+      #  perspective: '200px'
+      #  rotateX: '+=10deg'
+      #  rotateY: '+=10deg'
+      #, ->
+      #  photo.transition
+      #    perspective: '200px'
+      #    rotateX: '-=10deg'
+      #    rotateY: '-=10deg'
+      #  , ->
+      #    photo_animation_lock = false
 
 
 # *************************************************************

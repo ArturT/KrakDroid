@@ -300,12 +300,20 @@ a.button {
             width: 291px + 431px;
           }
 
-          .photo {
+          .circle {
             width: 140px;
             height: 140px;
             border-radius: 70px;
             background-size: 120%;
+          }
+
+          .photo {
             margin-top: 24px;
+
+            .gray_layer {
+              opacity: .2;
+              background-color: #000;
+            }
           }
         }
 
