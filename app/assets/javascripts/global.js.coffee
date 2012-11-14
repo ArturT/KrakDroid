@@ -47,10 +47,11 @@ jQuery ->
       'padding-bottom': '5px'
     , arrow_speed)
   .mouseleave ->
-    arrow_animation_lock = false
     $('#arrow').animate(
       'padding-bottom': '0'
-    , arrow_speed)
+    , arrow_speed, ->
+      arrow_animation_lock = false
+    )
 
   # schedule dots animation
   $('div.strap').mouseenter ->
