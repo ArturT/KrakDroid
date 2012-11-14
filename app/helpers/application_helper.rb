@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def banner(img, url, title)
+  def banner(img, url, title = nil)
     raw %{<div class="banner_container">#{link_to(image_tag(image_path(img)), url, title: title)}</div>}
   end
 
