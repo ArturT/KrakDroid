@@ -119,6 +119,7 @@ window.go_to_by_scroll = (obj, allowed_margin, up_limit) ->
     $('html,body').animate
       scrollTop: destination, 'slow'
 
+# speaker_id e.g. '#speaker_1'
 window.jump_to_speaker = (obj, speaker_id) ->
   #console.log('jump to speaker')
   $(obj).transition
@@ -129,6 +130,27 @@ window.jump_to_speaker = (obj, speaker_id) ->
   setTimeout(->
     go_to_by_scroll(speaker_id, 0, 20)
   , 200)
+
+  # turn off highlight for all speakers
+  $('.speaker_container').find('.gray_layer').animate
+    opacity: 0.2
+
+  setTimeout(->
+    h2 = $(speaker_id).find('h2')
+    h2.animate
+      width: '+=60'
+      borderColor: '#fff'
+    , ->
+      h2.animate
+        width: '-=60'
+        borderColor: '#b2b2b2'
+      , 2000
+
+    # highlight speaker face
+    gray_layer = $(speaker_id).find('.gray_layer')
+    gray_layer.animate
+      opacity: 0
+  , 400)
 
 
 # *************************************************************
