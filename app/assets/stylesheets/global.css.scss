@@ -126,7 +126,8 @@ a.button:hover {
   text-align: right;
   margin: 0 auto;
   padding-top: 24px + $choose_language_padding;
-  padding-right: 18px;
+  padding-right: 26px;
+
 
   a, span {
     background: #fff;
@@ -298,12 +299,14 @@ a.button:hover {
         .speaker_container {
           clear: both;
 
+          $eight_px: 8px;
           .left {
-            width: 140px;
+            width: 140px + $eight_px;
+            padding-bottom: 28px;
           }
 
           .right {
-            width: 291px + 431px;
+            width: 291px + 431px - $eight_px;
           }
 
           .circle {
@@ -314,7 +317,8 @@ a.button:hover {
           }
 
           .photo {
-            margin-top: 24px;
+            margin-top: 3px;
+            float: right;
 
             .gray_layer {
               opacity: .2;
