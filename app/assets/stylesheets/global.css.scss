@@ -105,12 +105,18 @@ a.button:hover {
  width: 300px;
  text-align: right;
  float: right;
- padding-right: $container_padding;
+ padding-right: $container_padding + 8px;
  margin-top: 410px;
 
  div {
    padding-bottom: 20px;
  }
+}
+
+.call_for_papers {
+  .aquo_big {
+    font-size: 18px;
+  }
 }
 
 .choose_language {
@@ -120,7 +126,7 @@ a.button:hover {
   text-align: right;
   margin: 0 auto;
   padding-top: 24px + $choose_language_padding;
-  padding-right: 10px;
+  padding-right: 18px;
 
   a, span {
     background: #fff;
@@ -132,12 +138,6 @@ a.button:hover {
 
   span {
     color: $gray;
-  }
-}
-
-.call_for_papers {
-  .aquo_big {
-    font-size: 18px;
   }
 }
 
