@@ -120,10 +120,12 @@ a.button:hover {
   text-align: right;
   margin: 0 auto;
   padding-top: 24px + $choose_language_padding;
+  padding-right: 10px;
 
   a, span {
     background: #fff;
     padding: 10px;
+    padding-bottom: 9px;
     border-radius: 30px;
     margin-right: -$choose_language_padding;
   }
