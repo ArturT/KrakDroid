@@ -142,6 +142,121 @@ a.button:hover {
   }
 }
 
+#menu_arrow_speaker {
+  top: 20px;
+  left: 20px;
+}
+
+#menu_arrow_organizers {
+  top: 60px;
+  right: 110px;
+}
+
+#menu_arrow_schedule {
+  top: 110px;
+  left: 20px;
+}
+
+#menu_arrow_sponsors {
+  top: 160px;
+  right: 110px;
+}
+
+.menu_end_left {
+  background: image-url('layout/menu_end.png') no-repeat;
+}
+
+.menu_end_right {
+  background: image-url('layout/menu_end.png') top right no-repeat;
+}
+
+.menu_arrow_container {
+  position: absolute;
+  font-size: 36px;
+  color: #fff;
+  width: 150px + 18px + 1px;
+
+  .menu_bg_left {
+    background: image-url('layout/menu_bg.png');
+    float: left;
+    overflow: hidden;
+  }
+
+  .menu_bg_right {
+    background: image-url('layout/menu_bg.png');
+    float: right;
+    overflow: hidden;
+  }
+
+  .menu_bg_left {
+    margin-left: 1px;
+  }
+
+  .menu_bg_right {
+    margin-right: 1px;
+  }
+
+  .arrow_gradient_dimensions {
+    width: 150px;
+    height: 65px;
+  }
+
+  .arrow_gradient_left {
+    background: image-url('layout/menu_gradient_left.png') top right no-repeat;
+  }
+
+  .arrow_gradient_right {
+    background: image-url('layout/menu_gradient_right.png') top left no-repeat;
+  }
+
+  .menu_arrow_dimensions {
+    width: 18px;
+    height: 65px;
+  }
+
+  .menu_arrow_left {
+    background: image-url('layout/menu_arrow_left.png');
+    float: right;
+  }
+
+  .menu_arrow_right {
+    background: image-url('layout/menu_arrow_right.png');
+    float: left;
+  }
+}
+
+.active_left_arrow {
+  background: image-url('layout/menu_end.png') bottom left no-repeat;
+
+  .menu_bg_left {
+    background-position: bottom left;
+  }
+
+  .arrow_gradient_left {
+    background-position: bottom right;
+  }
+
+  .menu_arrow_left {
+    background-position: bottom left;
+  }
+}
+
+.active_right_arrow {
+  background: image-url('layout/menu_end.png') bottom right no-repeat;
+
+  .menu_bg_right {
+    background-position: bottom right;
+  }
+
+  .arrow_gradient_right {
+    background-position: bottom left;
+  }
+
+  .menu_arrow_right {
+    background-position: bottom right;
+  }
+}
+
 .container {
   overflow: hidden;
   margin: 0 auto;
@@ -156,6 +271,7 @@ a.button:hover {
     .logo_div {
       background: image-url('layout/logo.png');
       height: 577px;
+      position: relative;
     }
 
     .header_side_container {
