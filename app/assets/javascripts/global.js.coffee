@@ -106,6 +106,18 @@ jQuery ->
       #  , ->
       #    photo_animation_lock = false
 
+  # blue menu arrow tab when mouseover
+  $('.menu_arrow_container').mouseover ->
+    if $(this).hasClass('menu_end_left')
+      $(this).addClass('active_left_arrow')
+    else
+      $(this).addClass('active_right_arrow')
+  .mouseleave ->
+    if $(this).hasClass('menu_end_left')
+      $(this).removeClass('active_left_arrow')
+    else
+      $(this).removeClass('active_right_arrow')
+
 
 # *************************************************************
 # window namespace
