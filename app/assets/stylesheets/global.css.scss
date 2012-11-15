@@ -142,24 +142,39 @@ a.button:hover {
   }
 }
 
-#menu_arrow_speaker {
-  top: 20px;
-  left: 20px;
-}
-
-#menu_arrow_organizers {
-  top: 60px;
-  right: 110px;
+#menu_arrow_speakers {
+  top: 88px;
+  left: 89px;
 }
 
 #menu_arrow_schedule {
-  top: 110px;
-  left: 20px;
+  top: 187px;
+  left: 49px;
+}
+
+#menu_arrow_location {
+  top: 286px;
+  left: 43px;
+}
+
+#menu_arrow_contact {
+  top: 385px;
+  left: 64px;
+}
+
+#menu_arrow_organizers {
+  top: 88px;
+  right: 42px;
 }
 
 #menu_arrow_sponsors {
-  top: 160px;
-  right: 110px;
+  top: 187px;
+  right: 42px;
+}
+
+#menu_arrow_partners {
+  top: 286px;
+  right: 42px;
 }
 
 .menu_end_left {
@@ -229,6 +244,10 @@ a.button:hover {
     background: image-url('layout/menu_arrow_right.png');
     float: left;
   }
+}
+
+.menu_arrow_container:hover {
+  cursor: pointer;
 }
 
 .active_left_arrow {
