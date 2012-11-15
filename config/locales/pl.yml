@@ -8,6 +8,14 @@ pl:
     description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 15 grudnia 2012."
     keywords: "mobile, systemy mobilne, telefony, android, linux, kraków, cracow, konferencja it"
   logo:
+    menu:
+      speakers: 'Prelegenci'
+      schedule: 'Agenda'
+      location: 'Dojazd'
+      contact: 'Kontakt'
+      organizers: 'Organizatorzy'
+      sponsors: 'Sponsorzy'
+      partners: 'Partnerzy'
     call_for_papers_html: 'Podziel się swoim doświadczeniem<br /> i zostań prelegentem na KrakDroid.'
     call_for_papers_button: 'Zgłoś prezentację'
   page:
