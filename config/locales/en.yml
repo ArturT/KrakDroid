@@ -10,8 +10,8 @@ en:
   logo:
     menu:
       speakers: 'Speakers'
-      schedule: 'Schedule'
-      location: 'Location'
+      schedule: 'Agenda'
+      location: 'Place'
       contact: 'Contact'
       organizers: 'Organizers'
       sponsors: 'Sponsors'
@@ -29,9 +29,9 @@ en:
     speakers:
       title: 'Speakers'
     schedule:
-      title: 'Schedule'
+      title: 'Agenda'
     contact:
-      title: 'Location and contact'
+      title: 'Place and contact'
       we_are_here:
         title: "We are here"
         description_html: 'KrakDroid conference will be held on 15th December 2012 at the Cracow University of Technology (see green arrow on map).'
