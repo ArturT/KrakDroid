@@ -130,6 +130,8 @@ window.go_to_by_scroll = (obj, allowed_margin, up_limit) ->
   if current < allowed_min or current > allowed_max
     $('html,body').animate
       scrollTop: destination, 'slow'
+    , ->
+      window.location.hash = obj
 
 # speaker_id e.g. '#speaker_1'
 window.jump_to_speaker = (obj, speaker_id) ->
