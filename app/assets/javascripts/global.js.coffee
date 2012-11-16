@@ -83,12 +83,12 @@ jQuery ->
       )
 
   # speaker photo animation
-  $('.speaker_container').mouseenter ->
-    $(this).find('.gray_layer').animate
-      opacity: 0
-  .mouseleave ->
-    $(this).find('.gray_layer').animate
-      opacity: 0.2
+  #$('.speaker_container').mouseenter ->
+  #  $(this).find('.gray_layer').animate
+  #    opacity: 0
+  #.mouseleave ->
+  #  $(this).find('.gray_layer').animate
+  #    opacity: 0.2
 
   #$('.speaker_container').mouseenter ->
     #unless photo_animation_lock
@@ -148,15 +148,15 @@ window.jump_to_speaker = (obj, speaker_id) ->
     opacity: 0.2
 
   setTimeout(->
-    h2 = $(speaker_id).find('h2')
-    h2.animate
-      width: '+=60'
-      borderColor: '#fff'
-    , ->
-      h2.animate
-        width: '-=60'
-        borderColor: '#b2b2b2'
-      , 2000
+    #h2 = $(speaker_id).find('h2')
+    #h2.animate
+    #  width: '+=60'
+    #  borderColor: '#fff'
+    #, ->
+    #  h2.animate
+    #    width: '-=60'
+    #    borderColor: '#b2b2b2'
+    #  , 2000
 
     # highlight speaker face
     gray_layer = $(speaker_id).find('.gray_layer')
