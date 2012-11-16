@@ -1,6 +1,10 @@
 module ApplicationHelper
-  def banner(img, url, title = nil)
-    raw %{<div class="banner_container">#{link_to(image_tag(image_path(img)), url, title: title)}</div>}
+  def banner(img, url, title = nil, css_class = nil)
+    raw %{
+      <div class="banner_container#{' '+css_class unless css_class.nil?}">
+        #{link_to(image_tag(image_path(img)), url, title: title)}
+      </div>
+    }
   end
 
   def choose_language
@@ -19,7 +23,7 @@ module ApplicationHelper
   def speaker_photo(photo_url)
     raw %{<div class="circle photo" style="background-image: url(#{asset_path(photo_url)});"><div class="circle gray_layer"></div></div>}
   end
-  
+
   def menu_arrow(title, jump_to, left_or_right)
     title_text = t "logo.menu.#{title}"
     raw %{

@@ -38,5 +38,9 @@ en:
       write_to_us:
         title: 'Write to us'
         description_html: 'Find us on <a href="https://www.facebook.com/KrakDroid">Facebook</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> or <a href="https://twitter.com/KrakDroid">Twitter</a>.'
+    sponsors_and_partners:
+      title: 'Sponsors and partners'
+      sponsors: 'Sponsors'
+      partners: 'Partners'
   footer:
     text_left: "15 December 2012 | Cracow University of Technology"

@@ -1,0 +1,22 @@
+<% content = capture do %>
+  <h2 id="sponsors"><%= t 'page.sponsors_and_partners.sponsors' %></h2>
+  <div class="text">
+    <%= t 'page.what_where_how.become_a_sponsore_html' %>
+  </div>
+
+  <h2 id="partners"><%= t 'page.sponsors_and_partners.partners' %></h2>
+  <div class="text">
+    <%= banner('partners/gdg_krakow_lq.png', 'http://krakow.gtug.pl') %>
+    <%= banner('partners/pjug_logo.jpg', 'http://www.java.pl') %>
+    <%= banner('partners/webook.png', 'http://www.webook.pl', 'Społeczność czytelników książek. Książki są także dla informatyków!') %>
+    <%= banner('partners/mobilization_friend.png', 'http://mobilization.pl') %>
+  </div>
+<% end %>
+
+<%= render 'layouts/header',
+  first_header: false,
+  number: 6,
+  title: t('page.sponsors_and_partners.title'),
+  right_box: nil,
+  content: content
+%>
