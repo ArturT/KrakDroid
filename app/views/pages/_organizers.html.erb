@@ -1,0 +1,28 @@
+<% content = capture do %>
+  <% unless @organizers.nil? %>
+    <% @organizers.each do |organizer| %>
+      <div class="speaker_container" id="speaker_<%= organizer.id %>">
+        <div class="left">
+          <%= speaker_photo("speakers/#{organizer.id}.jpg") %>
+        </div>
+        <div class="right">
+          <h2><%= organizer.name %></h2>
+          <div class="text">
+            <%= organizer.description %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% else %>
+    <%= t 'common.coming_soon' %>
+  <% end %>
+<% end %>
+
+<%= render 'layouts/header',
+  first_header: false,
+  number: 5,
+  id: 'organizers',
+  title: t('page.organizers.title'),
+  right_box: nil,
+  content: content
+%>

@@ -30,6 +30,8 @@ en:
       partners_title: 'Partners'
     speakers:
       title: 'Speakers'
+    organizers:
+      title: 'Organizers'
     schedule:
       title: 'Agenda'
     contact:

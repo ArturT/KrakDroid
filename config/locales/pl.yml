@@ -30,6 +30,8 @@ pl:
       partners_title: 'Partnerzy'
     speakers:
       title: 'Lista prelegentów'
+    organizers:
+      title: 'Organizatorzy'
     schedule:
       title: 'Agenda konferencji'
     contact:
