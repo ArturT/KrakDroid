@@ -7,6 +7,8 @@ en:
     title: "KrakDroid"
     description: "Android conference in Cracow"
     keywords: "mobile, android, smartphones, linux, cracow, it conference"
+  common:
+    coming_soon: 'Coming soon.'
   logo:
     menu:
       speakers: 'Speakers'

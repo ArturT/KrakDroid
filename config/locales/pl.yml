@@ -7,6 +7,8 @@ pl:
     title: "KrakDroid"
     description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 15 grudnia 2012."
     keywords: "mobile, systemy mobilne, telefony, android, linux, kraków, cracow, konferencja it"
+  common:
+    coming_soon: 'Już wkrótce.'
   logo:
     menu:
       speakers: 'Prelegenci'
