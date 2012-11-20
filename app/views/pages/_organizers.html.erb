@@ -1,7 +1,7 @@
 <% content = capture do %>
   <% unless @organizers.nil? %>
     <% @organizers.each do |organizer| %>
-      <div class="speaker_container" id="speaker_<%= organizer.id %>">
+      <div class="speaker_container" id="organizer_<%= organizer.id %>">
         <div class="left">
           <%= speaker_photo("speakers/#{organizer.id}.jpg") %>
         </div>
