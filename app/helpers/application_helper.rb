@@ -37,4 +37,12 @@ module ApplicationHelper
     </div>
     }
   end
+
+  def text(text)
+    if text.blank?
+      t 'common.coming_soon'
+    else
+      raw text
+    end
+  end
 end

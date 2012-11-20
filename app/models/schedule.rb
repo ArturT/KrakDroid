@@ -5,8 +5,8 @@ class Schedule < ActiveRecord::Base
 
   validates :topic_pl, presence: true
   validates :topic_en, presence: true
-  validates :description_pl, presence: true
-  validates :description_en, presence: true
+  #validates :description_pl, presence: true
+  #validates :description_en, presence: true
   validates :start_time, presence: true
   validates :end_time, presence: true
   validates :speaker_id, presence: true
