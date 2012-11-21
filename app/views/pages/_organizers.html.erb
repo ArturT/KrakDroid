@@ -3,7 +3,7 @@
     <% @organizers.each do |organizer| %>
       <div class="speaker_container" id="organizer_<%= organizer.id %>">
         <div class="left">
-          <%= speaker_photo("speakers/#{organizer.id}.jpg") %>
+          <%= speaker_photo(organizer.photo.thumb) %>
         </div>
         <div class="right">
           <h2><%= organizer.name %></h2>

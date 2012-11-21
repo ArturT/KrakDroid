@@ -1,5 +1,6 @@
 class Speaker < ActiveRecord::Base
-  attr_accessible :name, :description_pl, :description_en, :organizer
+  attr_accessible :name, :description_pl, :description_en, :organizer, :photo
+  mount_uploader :photo, PhotoUploader
 
   has_many :schedules, dependent: :destroy
 

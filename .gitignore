@@ -18,6 +18,9 @@
 # Ignore examples files
 /config/database.yml
 
+# Ignore uploads
+/public/uploads
+
 # Ignore IntelliJ or RubyMine
 .idea
 
