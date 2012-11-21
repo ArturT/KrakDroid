@@ -1,5 +1,5 @@
 <% content = capture do %>
-  <% unless @speakers.nil? %>
+  <% if @speakers.size > 0 %>
     <% @speakers.each do |speaker| %>
       <div class="speaker_container" id="speaker_<%= speaker.id %>">
         <div class="left">
