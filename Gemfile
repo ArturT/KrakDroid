@@ -44,10 +44,10 @@ gem 'jquery-ui-rails'
 gem 'jquery_datepicker'
 
 gem 'activeadmin'
-gem 'ActiveAdmin-Globalize3-inputs'
-gem 'globalize3'
-gem 'carrierwave'
 gem 'mini_magick'
+gem 'carrierwave', '~> 0.6.2'
+gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
+gem 'settingslogic'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

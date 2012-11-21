@@ -1,0 +1,26 @@
+defaults: &defaults
+
+development:
+  <<: *defaults
+  ftp:
+    host: "ftp.domain.com"
+    port: 21
+    user: "user"
+    passwd: "password"
+    folder: "/development"
+    url: "http://domain.com/development"
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  ftp:
+    host: "ftp.domain.com"
+    port: 21
+    user: "user"
+    passwd: "password"
+    folder: "/production"
+    url: "http://domain.com/production"
+
+
