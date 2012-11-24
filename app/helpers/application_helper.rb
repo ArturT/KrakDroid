@@ -45,4 +45,35 @@ module ApplicationHelper
       raw text
     end
   end
+
+  def put_if_even_parity(put, counter)
+    put if counter % 2 == 0
+  end
+
+  # start_hour is first hour displaing in schedule table view
+  def strap_schedule(schedule, start_hour)
+    cell = 49 # cell width one hour
+
+    st = schedule.start_time
+    et = schedule.end_time
+
+    strap_width = cell * ( (et.hour.to_f - st.hour.to_f) + (et.min.to_f - st.min.to_f)/60 )
+
+    # move begin of strap to the right to one hour
+    strap_begin = cell * ( (st.hour.to_f - start_hour.to_f) + st.min.to_f/60) - 8 # minus 8px
+
+    raw %{
+    <div class="relative">
+      <div class="strap" onclick="jump_to_speaker(this, '#speaker_#{schedule.speaker_id}')" style="width:#{strap_width}px;margin-left:#{strap_begin}px;">
+        <div class="dot"></div>
+      </div>
+    </div>
+    }
+  end
+
+  def schedule_topic_jumper(schedule)
+    raw %{
+    <span class="cursor_pointer" onclick="jump_to_speaker(this, '#speaker_#{schedule.speaker_id}')">#{schedule.topic}</span>
+    }
+  end
 end

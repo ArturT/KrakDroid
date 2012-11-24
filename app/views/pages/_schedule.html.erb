@@ -1,82 +1,29 @@
 <% content = capture do %>
   <% if @schedules.size > 0 %>
-    <% @schedules.each do |schedule| %>
-      <div class="box text">
-        <table class="schedule">
-          <tr class="header">
-            <td class="topic"></td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
+    <%
+    # config vars
+    counter = 1; start_hour = 8; end_hour = start_hour + 11
+    %>
+    <div class="box text">
+      <table class="schedule">
+        <tr class="header">
+          <td class="topic"></td>
+          <% (start_hour..end_hour).each do |hour| %>
+            <td><%= hour %></td>
+          <% end %>
+        </tr>
+        <% @schedules.each do |schedule| %>
+          <tr class="row<%= put_if_even_parity(' gray_bg', counter) %>">
+            <td class="topic"><%= schedule_topic_jumper(schedule) %></td>
+            <td><%= strap_schedule(schedule, start_hour) %></td>
+            <% (start_hour+2..end_hour).each do |hour| %>
+              <td></td>
+            <% end %>
           </tr>
-          <tr class="row">
-            <td class="topic">Temat</td>
-            <td><div class="relative"><div class="strap" onclick="jump_to_speaker(this, '#speaker_id')"><div class="dot"></div></div></div></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="row gray_bg">
-            <td class="topic">Temat 2, Temat 2, Temat 2, Temat 2, Temat 2, Temat 2, Temat</td>
-            <td><div class="relative"><div class="strap" onclick="jump_to_speaker(this, '#speaker_id')" style="width:147px;margin-left:41px;"><div class="dot"></div></div></div></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="row">
-            <td class="topic">Temat</td>
-            <td><div class="relative"><div class="strap" onclick="jump_to_speaker(this, '#speaker_id2')" style="width:147px;"><div class="dot"></div></div></div></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="row gray_bg">
-            <td class="topic">Temat</td>
-            <td><div class="relative"><div class="strap" onclick="jump_to_speaker(this, '#speaker_id')" style="width:392px;"><div class="dot"></div></div></div></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-    <% end %>
+          <% counter += 1 %>
+        <% end %>
+      </table>
+    </div>
   <% else %>
     <div class="text">
       <%= t 'common.coming_soon' %>
