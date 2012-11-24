@@ -3,6 +3,8 @@ class Schedule < ActiveRecord::Base
 
   belongs_to :speaker
 
+  scope :start_time_asc, order('start_time ASC')
+
   validates :topic_pl, presence: true
   validates :topic_en, presence: true
   #validates :description_pl, presence: true
@@ -10,6 +12,7 @@ class Schedule < ActiveRecord::Base
   validates :start_time, presence: true
   validates :end_time, presence: true
   validates :speaker_id, presence: true
+  validate :valid_time
 
   def topic
     if I18n.locale == :en
@@ -24,6 +27,15 @@ class Schedule < ActiveRecord::Base
       description_en
     else
       description_pl
+    end
+  end
+
+  private
+
+  def valid_time
+    return unless start_time && end_time
+    if start_time > end_time
+      errors.add(:start_time, 'is greater than end time')
     end
   end
 end
