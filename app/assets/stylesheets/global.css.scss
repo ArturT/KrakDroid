@@ -37,13 +37,15 @@ body {
 .banner_container {
   margin-bottom: 20px;
   margin-right: 20px;
-  height: 100px;
-  min-width: 200px;
+  line-height: 100px;
+  min-width: 20px;
   text-align: center;
   float: left;
 
   img {
-    max-height: 100px;
+    max-height: 80px;
+    max-width: 350px;
+    vertical-align: middle;
     filter: image-url('layout/filters.svg#grayscale'); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
