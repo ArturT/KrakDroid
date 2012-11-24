@@ -1,9 +1,8 @@
 ActiveAdmin.register Schedule do
-  scope :start_time_asc, default: true do
-    Schedule.start_time_asc
-  end
+  scope :start_time_asc, default: true
 
   index do
+    column :speaker
     column :topic_pl
     column :topic_en
     column :description_pl do |schedule|

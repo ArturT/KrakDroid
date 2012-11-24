@@ -485,6 +485,20 @@ a.button:hover {
               background-color: #000;
             }
           }
+
+          .schedule_topic_container {
+            margin-top: 20px;
+
+            .schedule_times {
+              color: $medium_blue;
+              margin-right: 7px;
+              //border-bottom: 1px solid $medium_blue;
+            }
+
+            .description {
+              padding-top: 10px;
+            }
+          }
         }
 
         .schedule {

@@ -76,4 +76,10 @@ module ApplicationHelper
     <span class="cursor_pointer" onclick="jump_to_speaker(this, '#speaker_#{schedule.speaker_id}')">#{schedule.topic}</span>
     }
   end
+
+  def schedule_times(schedule)
+    %{
+      #{schedule.start_time.strftime('%H:%M')} - #{schedule.end_time.strftime('%H:%M')}
+    }
+  end
 end
