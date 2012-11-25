@@ -11,7 +11,7 @@ Conference Website
 	/config/application.yml.example
 
 
-## Paperclip gem requires
+## Carrierwave gem requires
 
 	# MacOS
 	brew install imagemagick
