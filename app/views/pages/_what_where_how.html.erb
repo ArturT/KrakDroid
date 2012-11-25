@@ -24,8 +24,43 @@
     <div class="text">
       <%= t 'page.what_where_how.conference_description_html' %>
     </div>
+
+    <h2>Twitter</h2>
+    <div class="text">
+      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+        new TWTR.Widget({
+          version: 2,
+          type: 'search',
+          search: 'krakdroid',
+          interval: 30000,
+          //title: 'krakdroid.pl',
+          subject: '',
+          width: 431,
+          height: 400,
+          theme: {
+            shell: {
+              background: '#ffffff',
+              color: '#30312B'
+            },
+            tweets: {
+              background: '#ffffff',
+              color: '#30312B',
+              links: '#85a50c'
+            }
+          },
+          features: {
+            scrollbar: true,
+            loop: false,
+            live: true,
+            behavior: 'all'
+          }
+        }).render().start();
+      </script>
+    </div>
   </div>
   <div class="right">
+    <h2>Facebook</h2>
     <div class="text">
       <div class="fb-like-box" data-href="https://www.facebook.com/KrakDroid" data-width="423" data-show-faces="true" data-border-color="#ffffff" data-stream="true" data-header="false"></div>
     </div>
