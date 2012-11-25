@@ -16,7 +16,7 @@
           <tr class="row<%= put_if_even_parity(' gray_bg', counter) %>">
             <td class="topic"><%= schedule_topic_jumper(schedule) %></td>
             <td><%= strap_schedule(schedule, start_hour) %></td>
-            <% (start_hour+2..end_hour).each do |hour| %>
+            <% (start_hour+1..end_hour).each do |hour| %>
               <td></td>
             <% end %>
           </tr>
