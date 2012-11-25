@@ -4,7 +4,13 @@ KrakDroid::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   match '/:locale' => 'pages#index'
+
   root to: 'pages#index'
+
+  resource :api, only: [] do
+    get :speakers
+    get :schedules
+  end
 
   scope "/:locale" do
   end

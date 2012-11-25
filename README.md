@@ -38,3 +38,9 @@ Conference Website
 	heroku config:add FTP_PASSWD=XXX
 	heroku config:add FTP_FOLDER=/production
 	heroku config:add FTP_URL=XXX
+
+
+# API
+
+	/api/speakers.json
+	/api/schedules.json
