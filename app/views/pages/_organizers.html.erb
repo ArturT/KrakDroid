@@ -1,4 +1,6 @@
 <% content = capture do %>
+  <%= banner('partners/gdg_krakow_lq.png', 'http://krakow.gtug.pl') %>
+
   <% if @organizers.size > 0 %>
     <% @organizers.each do |organizer| %>
       <div class="speaker_container" id="organizer_<%= organizer.id %>">
