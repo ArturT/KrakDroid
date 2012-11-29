@@ -118,6 +118,7 @@ jQuery ->
     else
       $(this).removeClass('active_right_arrow')
 
+  set_secret_cookie()
 
 # *************************************************************
 # window namespace
@@ -166,6 +167,10 @@ window.jump_to_speaker = (obj, speaker_id) ->
       opacity: 0
   , 400)
 
+window.p4of4_bool = (value) ->
+  return p4of4() if value == true
+  console.log('nope')
+
 
 # *************************************************************
 # Private functions
@@ -191,4 +196,10 @@ arrow_animation = ->
       run_arrow_animation())
   else
     run_arrow_animation()
+
+set_secret_cookie = ->
+  $.cookie('p3of4', 'zLiBQbGVhc2UgY29udGFjdCB3aXRoIG9yZ2Fua', { expires: 7, path: '/' });
+
+p4of4 = ->
+  alert('XplcnMgYXQgdGhlIGNvbmZlcmVuY2UgZGF5LiBZb3VyIHNlY3JldCBwYXNzd29yZCBpcyAiY3VyaW9zaXR5Ii4=')
 
