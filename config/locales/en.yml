@@ -20,6 +20,7 @@ en:
       partners: 'Partners'
     call_for_papers_html: "Want to share your knowledge as a speaker? Feel free to submit your proposal!"
     call_for_papers_button: 'Call for papers'
+    registration_button: 'Registration'
   page:
     what_where_how:
       title: 'What? Where? How?'

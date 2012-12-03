@@ -82,4 +82,18 @@ module ApplicationHelper
       #{schedule.start_time.strftime('%H:%M')} - #{schedule.end_time.strftime('%H:%M')}
     }
   end
+
+  def call_for_papers
+    raw %{
+      <div>#{t 'logo.call_for_papers_html'}</div>
+      <a href="https://docs.google.com/spreadsheet/viewform?formkey=dG56Z1hmU1ZRNFEyNkNhMTFMLThaX3c6MQ" class="button">#{t 'logo.call_for_papers_button'} <span class="aquo_big">&rsaquo;</span></a>
+    }
+  end
+
+  def registration_button
+    raw %{
+      <div><br /><br /></div>
+      <a href="http://krakdroid.eventbrite.com" class="button">#{t 'logo.registration_button'} <span class="aquo_big">&rsaquo;</span></a>
+    }
+  end
 end
