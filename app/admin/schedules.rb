@@ -3,6 +3,9 @@ ActiveAdmin.register Schedule do
 
   index do
     column :speaker
+    column :room_id do |schedule|
+      schedule.room.name unless schedule.room.blank?
+    end
     column :topic_pl
     column :topic_en
     column :description_pl do |schedule|

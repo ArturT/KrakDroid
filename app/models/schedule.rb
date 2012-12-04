@@ -1,7 +1,8 @@
 class Schedule < ActiveRecord::Base
-  attr_accessible :topic_pl, :topic_en, :description_pl, :description_en, :start_time, :end_time, :speaker_id
+  attr_accessible :topic_pl, :topic_en, :description_pl, :description_en, :start_time, :end_time, :speaker_id, :room_id
 
   belongs_to :speaker
+  belongs_to :room
 
   scope :start_time_asc, order('start_time ASC')
 
@@ -12,6 +13,7 @@ class Schedule < ActiveRecord::Base
   validates :start_time, presence: true
   validates :end_time, presence: true
   validates :speaker_id, presence: true
+  validates :room_id, presence: true
   validate :valid_time
   validate :valid_speaker
   validate :valid_time_day
@@ -57,9 +59,11 @@ class Schedule < ActiveRecord::Base
   end
 
   def valid_speaker
-    speaker = Speaker.find(self.speaker_id)
-    if speaker.organizer
-      errors.add(:speaker_id, 'is organizer')
+    speaker = Speaker.where(id: speaker_id.to_i)
+    if speaker.size == 1
+      if speaker.first.organizer
+        errors.add(:speaker_id, 'is organizer')
+      end
     end
   end
 end
