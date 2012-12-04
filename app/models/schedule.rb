@@ -12,7 +12,7 @@ class Schedule < ActiveRecord::Base
   #validates :description_en, presence: true
   validates :start_time, presence: true
   validates :end_time, presence: true
-  validates :speaker_id, presence: true
+  #validates :speaker_id, presence: true
   validates :room_id, presence: true
   validate :valid_time
   validate :valid_speaker
