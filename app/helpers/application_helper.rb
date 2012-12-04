@@ -62,9 +62,15 @@ module ApplicationHelper
     # move begin of strap to the right to one hour
     strap_begin = cell * ( (st.hour.to_f - start_hour.to_f) + st.min.to_f/60) - 8 # minus 8px
 
+    if schedule.speaker_id.nil?
+      div_attr = 'class="strap"'
+    else
+      div_attr = %{class="strap cursor_pointer" onclick="jump_to_speaker(this, '#speaker_#{schedule.speaker_id}')"}
+    end
+
     raw %{
     <div class="relative">
-      <div class="strap" onclick="jump_to_speaker(this, '#speaker_#{schedule.speaker_id}')" style="width:#{strap_width}px;margin-left:#{strap_begin}px;">
+      <div #{div_attr} style="width:#{strap_width}px;margin-left:#{strap_begin}px;">
         <div class="dot"></div>
       </div>
     </div>
@@ -72,9 +78,13 @@ module ApplicationHelper
   end
 
   def schedule_topic_jumper(schedule)
-    raw %{
+    if schedule.speaker_id.nil?
+      schedule.topic
+    else
+      raw %{
     <span class="cursor_pointer" onclick="jump_to_speaker(this, '#speaker_#{schedule.speaker_id}')">#{schedule.topic}</span>
-    }
+      }
+    end
   end
 
   def schedule_times(schedule)
