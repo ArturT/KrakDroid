@@ -57,6 +57,7 @@ class Schedule < ActiveRecord::Base
   end
 
   def valid_speaker
+    speaker = Speaker.find(self.speaker_id)
     if speaker.organizer
       errors.add(:speaker_id, 'is organizer')
     end
