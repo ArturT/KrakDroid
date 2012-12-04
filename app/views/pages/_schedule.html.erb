@@ -5,24 +5,27 @@
     counter = 1; start_hour = 8; end_hour = start_hour + 11
     %>
     <div class="box text">
-      <table class="schedule">
-        <tr class="header">
-          <td class="topic"></td>
-          <% (start_hour..end_hour).each do |hour| %>
-            <td><%= hour %></td>
-          <% end %>
-        </tr>
-        <% @schedules.each do |schedule| %>
-          <tr class="row<%= put_if_even_parity(' gray_bg', counter) %>">
-            <td class="topic"><%= schedule_topic_jumper(schedule) %></td>
-            <td><%= strap_schedule(schedule, start_hour) %></td>
-            <% (start_hour+1..end_hour).each do |hour| %>
-              <td></td>
+      <% @schedules.group_by(&:room).sort.each do |room, schedules| %>
+        <div class="room_title"><%= room.name %></div>
+        <table class="schedule">
+          <tr class="header">
+            <td class="topic"></td>
+            <% (start_hour..end_hour).each do |hour| %>
+              <td><%= hour %></td>
             <% end %>
           </tr>
-          <% counter += 1 %>
-        <% end %>
-      </table>
+          <% schedules.each do |schedule| %>
+            <tr class="row<%= put_if_even_parity(' gray_bg', counter) %>">
+              <td class="topic"><%= schedule_topic_jumper(schedule) %></td>
+              <td><%= strap_schedule(schedule, start_hour) %></td>
+              <% (start_hour+1..end_hour).each do |hour| %>
+                <td></td>
+              <% end %>
+            </tr>
+            <% counter += 1 %>
+          <% end %>
+        </table>
+      <% end %>
     </div>
   <% else %>
     <div class="text">

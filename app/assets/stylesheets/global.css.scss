@@ -503,6 +503,16 @@ a.button:hover {
           }
         }
 
+        .room_title {
+          font-weight: bold;
+          font-size: 16px;
+          margin-top: 50px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
         .schedule {
           width: 100%;
           border-spacing: 0;
