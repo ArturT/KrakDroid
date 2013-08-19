@@ -41,6 +41,17 @@ Conference Website.
     heroku config:add FTP_URL=XXX
 
 
+## Deploy to Heroku.com
+
+Add heroku to your git remotes:
+
+    $ git remote add heroku git@heroku.com:krakdroid.git
+
+Push only branch `krakdroid-2012` to heroku:
+
+    $ git push heroku krakdroid-2012:master
+
+
 # API
 
     /api/speakers.json
