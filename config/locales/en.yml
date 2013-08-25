@@ -3,6 +3,8 @@
 
 en:
   hello: "Hello world"
+  words:
+    show_larger_map: "Show larger map"
   meta:
     title: "KrakDroid"
     description: "Android conference in Cracow"
