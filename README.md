@@ -24,10 +24,10 @@ Conference Website
 
 ## Basic info
 
-[krakdroid.herokuapp.com](http://krakdroid.herokuapp.com)
+[krakdroid2013.herokuapp.com](http://krakdroid2013.herokuapp.com)
 
     db: postgresql
-    git@heroku.com:krakdroid.git
+    git@heroku.com:krakdroid2013.git
 
 ## Config vars
 
