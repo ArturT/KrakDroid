@@ -39,6 +39,11 @@ Conference Website
     $ heroku config:add FTP_URL=XXX
 
 
+## Tips
+
+Remove `admin@example.com` user with password `password` after deploy to production.
+
+
 # API
 
     /api/speakers.json
