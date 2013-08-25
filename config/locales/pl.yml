@@ -5,7 +5,7 @@ pl:
   hello: "Witaj Świecie!"
   meta:
     title: "KrakDroid"
-    description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 15 grudnia 2012."
+    description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 7 grudnia 2013."
     keywords: "mobile, systemy mobilne, telefony, android, linux, kraków, cracow, konferencja it"
   common:
     coming_soon: 'Już wkrótce.'
@@ -25,10 +25,8 @@ pl:
     what_where_how:
       title: 'Co? Gdzie? Jak?'
       what_is_krakdroid_title: 'Czym jest KrakDroid?'
-      conference_description_html: "KrakDroid to <strong>darmowa konferencja</strong> dotycząca programowania i projektowania na system Android - odbędzie się 15 grudnia 2012 w Krakowie."
-      conference_description_html: "KrakDroid jest konferencją poświęconą tworzeniu aplikacji na platformę Android, która odbędzie się 15 grudnia w Krakowie. Uczestnictwo w niej jest w pełni darmowe, będzie gościć około 200 uczestników w dwóch salach konferencyjnych Politechniki Krakowskiej. <br /><br />
-
-      KrakDroid jest następcą ubiegłorocznej konferencji cracow.mobi, która odbyła się w Krakowie 8-9 grudnia będąc w swoim czasie jedną z największych konferencji poświęconych urządzeniom mobilnym w Europie środkowej (250 osób)."
+      conference_description_html: "KrakDroid to <strong>darmowa konferencja</strong> dotycząca programowania i projektowania na system Android - odbędzie się 7 grudnia 2013 w Krakowie."
+      conference_description_html: "KrakDroid jest konferencją poświęconą tworzeniu aplikacji na platformę Android, która odbędzie się 7 grudnia w Krakowie. Uczestnictwo w niej jest w pełni darmowe."
       sponsors_title: 'Sponsorzy'
       become_a_sponsore_html: '<a href="mailto:heniekk@gmail.com">Zostań sponsorem</a>'
       partners_title: 'Partnerzy'
@@ -42,7 +40,7 @@ pl:
       title: 'Dojazd i kontakt'
       we_are_here:
         title: 'Jesteśmy tutaj'
-        description_html: 'Konferencja KrakDroid odbędzie się 15 Grudnia 2012 na Wydziale Mechanicznym Politechniki Krakowskiej. Zapraszamy do głównego budynku, patrz zielona strzałka na mapie.'
+        description_html: 'Konferencja KrakDroid odbędzie się 7 Grudnia 2013 w <a href="http://www.galiciajewishmuseum.org">Żydowskim Muzeum Galicja</a>, ul. Dajwór 18. Zapraszamy, patrz zielona strzałka na mapie.'
       write_to_us:
         title: 'Napisz do nas'
         description_html: 'Czekamy na twoje komentarze na <a href="https://www.facebook.com/KrakDroid">Facebooku</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> i <a href="https://twitter.com/KrakDroid">Twitterze</a>.'
@@ -51,5 +49,5 @@ pl:
       sponsors: 'Sponsorzy'
       partners: 'Partnerzy'
   footer:
-    text_left: "15 Grudnia 2012 | Politechnika Krakowska"
+    text_left: "7 Grudnia 2013 | Żydowskie Muzeum Galicja"
     hide_message: "Keep going. Go deeper. Secret message part 1 of 4: Q29uZ3JhdHVsYXRpb24hIF"

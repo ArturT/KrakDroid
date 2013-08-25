@@ -25,7 +25,7 @@ en:
     what_where_how:
       title: 'What? Where? How?'
       what_is_krakdroid_title: 'What is KrakDroid?'
-      conference_description_html: "KrakDroid is <strong>free conference</strong> about programming on Android platform. It will be held on 15th December 2012 in Cracow, Poland. More information coming soon."
+      conference_description_html: "KrakDroid is <strong>free conference</strong> about programming on Android platform. It will be held on 7th December 2013 in Cracow, Poland. More information coming soon."
       sponsors_title: 'Sponsors'
       become_a_sponsore_html: '<a href="mailto:heniekk@gmail.com">Become a sponsor</a>'
       partners_title: 'Partners'
@@ -39,7 +39,7 @@ en:
       title: 'Place and contact'
       we_are_here:
         title: "We are here"
-        description_html: 'KrakDroid conference will be held on 15th December 2012 at the Cracow University of Technology (see green arrow on map).'
+        description_html: 'KrakDroid conference will be held on 7th December 2013 at <a href="http://www.en.galiciajewishmuseum.org">the Galicia Jewish Museum</a> (see green arrow on map).'
       write_to_us:
         title: 'Write to us'
         description_html: 'Find us on <a href="https://www.facebook.com/KrakDroid">Facebook</a>, <a href="https://plus.google.com/101136791804282588345">Google+</a> or <a href="https://twitter.com/KrakDroid">Twitter</a>.'
@@ -48,5 +48,5 @@ en:
       sponsors: 'Sponsors'
       partners: 'Partners'
   footer:
-    text_left: "15 December 2012 | Cracow University of Technology"
+    text_left: "7 December 2013 | Galicia Jewish Museum"
     hide_message: "Keep going. Go deeper. Secret message part 1 of 4: Q29uZ3JhdHVsYXRpb24hIF"
