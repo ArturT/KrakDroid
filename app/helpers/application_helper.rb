@@ -96,7 +96,7 @@ module ApplicationHelper
   def call_for_papers
     raw %{
       <div>#{t 'logo.call_for_papers_html'}</div>
-      <a href="https://docs.google.com/spreadsheet/viewform?formkey=dG56Z1hmU1ZRNFEyNkNhMTFMLThaX3c6MQ" class="button">#{t 'logo.call_for_papers_button'} <span class="aquo_big">&rsaquo;</span></a>
+      <a href="https://docs.google.com/forms/d/1kdzC4cHeEmDo-FmjMH0ZOv1uI1O4_hcaebfqeiaQKJg/viewform" class="button">#{t 'logo.call_for_papers_button'} <span class="aquo_big">&rsaquo;</span></a>
     }
   end
 
