@@ -5,6 +5,7 @@ en:
   hello: "Hello world"
   words:
     show_larger_map: "Show larger map"
+    last_updated: 'last updated'
   meta:
     title: "KrakDroid"
     description: "Android conference in Cracow"

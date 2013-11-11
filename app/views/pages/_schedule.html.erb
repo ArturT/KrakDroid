@@ -1,3 +1,7 @@
+<% right_box = capture do %>
+  <%= schedule_last_updated(@schedule_last_updated) %>
+<% end %>
+
 <% content = capture do %>
   <% if @schedules.size > 0 %>
     <%
@@ -39,6 +43,6 @@
   number: 3,
   id: 'schedule',
   title: t('page.schedule.title'),
-  right_box: nil,
+  right_box: right_box,
   content: content
 %>

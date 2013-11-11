@@ -34,6 +34,10 @@ class Schedule < ActiveRecord::Base
     end
   end
 
+  def self.last_updated
+    select('updated_at').order('updated_at DESC').limit(1).first.try(:updated_at)
+  end
+
   private
 
   def valid_time

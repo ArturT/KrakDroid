@@ -106,4 +106,11 @@ module ApplicationHelper
       <a href="http://krakdroid.eventbrite.com" class="button">#{t 'logo.registration_button'} <span class="aquo_big">&rsaquo;</span></a>
     }
   end
+
+  def schedule_last_updated(last_updated)
+    unless last_updated.nil?
+      date = l(last_updated, format: :short)
+      "#{t('words.last_updated')} #{date}"
+    end
+  end
 end

@@ -5,6 +5,7 @@ pl:
   hello: "Witaj Świecie!"
   words:
     show_larger_map: "Wyświetl większą mapę"
+    last_updated: 'ostatnia aktualizacja'
   meta:
     title: "KrakDroid"
     description: "Konferencja dotycząca programowania i projektowania na system Android. Kraków 7 grudnia 2013."
