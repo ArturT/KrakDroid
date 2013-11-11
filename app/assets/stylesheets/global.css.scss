@@ -318,6 +318,23 @@ a.button:hover {
       background: image-url('layout/logo.png');
       height: 577px;
       position: relative;
+
+      $dragon-eye: 15px;
+      .dragon-eye {
+        background: red;
+        background: rgb(66, 222, 0);
+        width: $dragon-eye;
+        height: $dragon-eye;
+        // hidden eye
+        //top: 86px;
+        top: 71px;
+        // hidden eye
+        //left: 445px;
+        left: 460px;
+        position: absolute;
+        border-radius: $dragon-eye/2;
+        opacity: 0;
+      }
     }
 
     .header_side_container {

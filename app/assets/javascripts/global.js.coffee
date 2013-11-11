@@ -119,6 +119,7 @@ jQuery ->
       $(this).removeClass('active_right_arrow')
 
   set_secret_cookie()
+  blink_dragon_eye_random()
 
 # *************************************************************
 # window namespace
@@ -172,6 +173,17 @@ window.p4of4_bool = (value) ->
   return p4of4() if value == true
   console.log('nope')
 
+window.blink_dragon_eye = ->
+  $('.dragon-eye').animate(
+    opacity: 1
+    top: '+=15px'
+    left: '-=15px'
+  , 100).delay(random_number(100,500)).animate
+    opacity: 0
+    top: '-=15px'
+    left: '+=15px'
+  , 100
+
 
 # *************************************************************
 # Private functions
@@ -204,3 +216,11 @@ set_secret_cookie = ->
 p4of4 = ->
   alert('XplcnMgYXQgdGhlIGNvbmZlcmVuY2UgZGF5LiBZb3VyIHNlY3JldCBwYXNzd29yZCBpcyAiY3VyaW9zaXR5Ii4=')
 
+random_number = (min, max) ->
+  Math.floor((Math.random()*max)+min)
+
+blink_dragon_eye_random = ->
+  setTimeout ->
+    blink_dragon_eye()
+    blink_dragon_eye_random()
+  , random_number(5000, 10000)
