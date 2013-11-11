@@ -28,8 +28,7 @@ pl:
     what_where_how:
       title: 'Co? Gdzie? Jak?'
       what_is_krakdroid_title: 'Czym jest KrakDroid?'
-      conference_description_html: "KrakDroid to <strong>darmowa konferencja</strong> dotycząca programowania i projektowania na system Android - odbędzie się 7 grudnia 2013 w Krakowie."
-      conference_description_html: "KrakDroid jest konferencją poświęconą tworzeniu aplikacji na platformę Android, która odbędzie się 7 grudnia w Krakowie. Uczestnictwo w niej jest w pełni darmowe."
+      conference_description_html: "KrakDroid jest konferencją poświęconą tworzeniu aplikacji na platformę Android, która odbędzie się 7 grudnia 2013 w Krakowie. Uczestnictwo w niej jest w pełni darmowe."
       sponsors_title: 'Sponsorzy'
       become_a_sponsore_html: '<a href="mailto:heniekk@gmail.com">Zostań sponsorem</a>'
       partners_title: 'Partnerzy'
