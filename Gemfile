@@ -46,7 +46,7 @@ gem 'jquery_datepicker'
 
 gem 'activeadmin'
 gem 'mini_magick'
-gem 'carrierwave', '~> 0.6.2'
+gem 'carrierwave'
 gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
 gem 'settingslogic'
 

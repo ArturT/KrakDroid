@@ -57,11 +57,12 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 2.0)
       xpath (~> 0.1.4)
-    carrierwave (0.6.2)
+    carrierwave (0.9.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
-    carrierwave-ftp (0.2.1)
-      carrierwave (~> 0.6.2)
+      json (>= 1.7)
+    carrierwave-ftp (0.2.4)
+      carrierwave (>= 0.6.2)
       net-sftp (~> 2.0.5)
     childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
@@ -135,7 +136,7 @@ GEM
     mysql2 (0.3.11)
     net-sftp (2.0.5)
       net-ssh (>= 2.0.9)
-    net-ssh (2.6.1)
+    net-ssh (2.7.0)
     nokogiri (1.5.5)
     orm_adapter (0.4.0)
     pg (0.16.0)
@@ -237,7 +238,7 @@ DEPENDENCIES
   activeadmin
   awesome_print
   capybara
-  carrierwave (~> 0.6.2)
+  carrierwave
   carrierwave-ftp
   coffee-rails (~> 3.2.1)
   factory_girl_rails
