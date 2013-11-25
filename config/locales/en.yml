@@ -30,7 +30,7 @@ en:
       what_is_krakdroid_title: 'What is KrakDroid?'
       conference_description_html: "KrakDroid is <strong>free conference</strong> about programming on Android platform. It will be held on 7th December 2013 in Cracow, Poland. More information coming soon."
       sponsors_title: 'Sponsors'
-      become_a_sponsore_html: '<a href="mailto:heniekk@gmail.com">Become a sponsor</a>'
+      become_a_sponsore: 'Become a sponsor'
       partners_title: 'Partners'
     speakers:
       title: 'Speakers'
