@@ -103,7 +103,7 @@ module ApplicationHelper
   def registration_button
     raw %{
       <div><br /><br /></div>
-      <a href="http://krakdroid.eventbrite.com" class="button">#{t 'logo.registration_button'} <span class="aquo_big">&rsaquo;</span></a>
+      <a href="https://krakdroid2013.eventbrite.com" class="button">#{t 'logo.registration_button'} <span class="aquo_big">&rsaquo;</span></a>
     }
   end
 
