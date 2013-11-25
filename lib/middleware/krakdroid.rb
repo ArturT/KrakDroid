@@ -1,4 +1,4 @@
-class Middleware::Krakdroid
+class Krakdroid
   def initialize(app)
     @app = app
   end

@@ -66,5 +66,5 @@ KrakDroid::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # redirect to www.krakdroid.pl
-  config.middleware.use "Middleware::Krakdroid"
+  config.middleware.use "Krakdroid"
 end
