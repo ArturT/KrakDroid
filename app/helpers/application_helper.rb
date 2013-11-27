@@ -88,9 +88,13 @@ module ApplicationHelper
   end
 
   def schedule_times(schedule)
+    if schedule.start_time && schedule.end_time
     %{
       #{schedule.start_time.strftime('%H:%M')} - #{schedule.end_time.strftime('%H:%M')}
     }
+    else
+      '--:-- - --:--'
+    end
   end
 
   def call_for_papers
