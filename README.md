@@ -46,8 +46,9 @@ Remove `admin@example.com` user with password `password` after deploy to product
 
 # API
 
-    /api/speakers.json
-    /api/schedules.json
+    /api/speakers
+    /api/schedules
+    /api/rooms
 
 
 # Deploy

@@ -10,6 +10,7 @@ KrakDroid::Application.routes.draw do
   resource :api, only: [] do
     get :speakers
     get :schedules
+    get :rooms
   end
 
   scope "/:locale" do

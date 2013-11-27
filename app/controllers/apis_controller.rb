@@ -1,15 +1,13 @@
 class ApisController < ApplicationController
   def speakers
-    @speakers = Speaker.all
-    respond_to do |format|
-      format.json { render json: @speakers }
-    end
+    render json: Speaker.all
   end
 
   def schedules
-    @schedules = Schedule.all
-    respond_to do |format|
-      format.json { render json: @schedules }
-    end
+    render json: Schedule.all
+  end
+
+  def rooms
+    render json: Room.all
   end
 end
