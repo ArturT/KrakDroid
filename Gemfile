@@ -45,6 +45,7 @@ gem 'jquery-ui-rails'
 gem 'jquery_datepicker'
 
 gem 'activeadmin'
+gem 'just-datetime-picker'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only

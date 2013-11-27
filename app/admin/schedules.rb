@@ -18,4 +18,19 @@ ActiveAdmin.register Schedule do
     column :end_time
     default_actions
   end
+
+  form do |f|
+    f.inputs do
+      f.input :speaker
+      f.input :room
+      f.input :topic_pl
+      f.input :topic_en
+      f.input :description_pl
+      f.input :description_en
+      f.input :start_time, as: :just_datetime_picker
+      f.input :end_time, as: :just_datetime_picker
+    end
+
+    f.buttons
+  end
 end
