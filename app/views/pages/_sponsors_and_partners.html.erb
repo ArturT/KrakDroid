@@ -1,7 +1,11 @@
 <% content = capture do %>
-  <h2 id="sponsors"><%= t 'page.sponsors_and_partners.sponsors' %> GOLD</h2>
   <div class="text">
     <%= mail_to 'maria@hackerspace-krk.pl', t('page.what_where_how.become_a_sponsore'), encode: :javascript %>
+  </div>
+
+  <h2 id="sponsors"><%= t 'page.sponsors_and_partners.sponsors' %> GOLD</h2>
+  <div class="text">
+    ...
   </div>
 
   <h2><%= t 'page.sponsors_and_partners.sponsors' %> SILVER</h2>
@@ -13,7 +17,7 @@
 
   <h2><%= t 'page.sponsors_and_partners.sponsors' %> BRONZE</h2>
   <div class="text">
-    <%= mail_to 'maria@hackerspace-krk.pl', t('page.what_where_how.become_a_sponsore'), encode: :javascript %>
+    <%= banner('sponsors/unerdwear.jpg', 'http://unerdwear.com') %>
   </div>
 
   <h2 id="partners"><%= t 'page.sponsors_and_partners.partners' %></h2>
