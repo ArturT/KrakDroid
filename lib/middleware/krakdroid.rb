@@ -5,7 +5,7 @@ class Krakdroid
 
   def call(env)
     request = Rack::Request.new(env)
-    if request.host.starts_with?("krakdroid2013")
+    if request.host.starts_with?("krakdroid2013") && false # turn off
       [301, {"Location" => "http://www.krakdroid.pl"}, self]
     else
       @app.call(env)
